@@ -1,3 +1,5 @@
+FOR OURLINK WR366MV
+
 This is the buildsystem for the OpenWrt Linux distribution.
 
 Please use "make menuconfig" to configure your appreciated
