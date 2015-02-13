@@ -169,6 +169,9 @@ ramips_board_detect() {
 	*"Planex MZK-750DHP")
 		name="mzk-750dhp"
 		;;
+	*"Ourlink-WR366MV")
+		name="wr366mv"
+		;;
 	*"NBG-419N")
 		name="nbg-419n"
 		;;

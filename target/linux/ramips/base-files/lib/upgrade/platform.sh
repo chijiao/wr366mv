@@ -44,7 +44,6 @@ platform_check_image() {
 	dir-620-d1 | \
 	dir-810l | \
 	dap-1350 | \
-	esr-9753 | \
 	f7c027 | \
 	fonera20n | \
 	rt-n13u | \
@@ -96,6 +95,7 @@ platform_check_image() {
 	wmr300 |\
 	wr8305rt |\
 	wrtnode |\
+	wr366mv |\
 	x5 |\
 	x8 |\
 	zbt-wa05 |\
