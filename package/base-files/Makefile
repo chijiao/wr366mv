@@ -137,6 +137,7 @@ define Package/base-files/install
 	ln -sf /tmp/resolv.conf /tmp/fstab /tmp/TZ $(1)/etc/
 
 	chmod 0600 $(1)/etc/shadow
+        chmod 0777 $(1)/etc/rc.local
 	chmod 1777 $(1)/tmp
 
 	$(call ImageConfigOptions,$(1))
