@@ -65,6 +65,15 @@ CONFIGURE_ARGS += \
 define Package/aria2/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/aria2c $(1)/usr/bin
+	$(INSTALL_DIR) $(1)/etc
+	$(INSTALL_CONF) ./files/aria2.conf $(1)/etc/aria2.conf
+	$(INSTALL_DIR) $(1)/etc/init.d
+	$(INSTALL_BIN) ./files/aria2.init $(1)/etc/init.d/aria2
+endef
+
+define Package/$(PKG_NAME)/postinst
+#!/bin/sh
+/etc/init.d/aria2 enable
 endef
 
 $(eval $(call BuildPackage,aria2))
