@@ -71,9 +71,5 @@ define Package/aria2/install
 	$(INSTALL_BIN) ./files/aria2.init $(1)/etc/init.d/aria2
 endef
 
-define Package/$(PKG_NAME)/postinst
-#!/bin/sh
-/etc/init.d/aria2 enable
-endef
 
 $(eval $(call BuildPackage,aria2))

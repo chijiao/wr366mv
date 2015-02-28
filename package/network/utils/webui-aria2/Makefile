@@ -38,13 +38,13 @@ define Build/Compile
 endef
 
 define Package/webui-aria2/install
-	$(INSTALL_DIR) $(1)/www/webui-aria2
-	$(CP) $(PKG_BUILD_DIR)/font $(1)/www/webui-aria2
-	$(CP) $(PKG_BUILD_DIR)/js $(1)/www/webui-aria2
-	$(CP) $(PKG_BUILD_DIR)/img $(1)/www/webui-aria2
-	$(CP) $(PKG_BUILD_DIR)/css $(1)/www/webui-aria2
-	$(CP) $(PKG_BUILD_DIR)/index.html $(1)/www/webui-aria2
-	$(CP) $(PKG_BUILD_DIR)/favicon.ico $(1)/www/webui-aria2
+	$(INSTALL_DIR) $(1)/www/lixian
+	$(CP) $(PKG_BUILD_DIR)/font $(1)/www/lixian
+	$(CP) $(PKG_BUILD_DIR)/js $(1)/www/lixian
+	$(CP) $(PKG_BUILD_DIR)/img $(1)/www/lixian
+	$(CP) $(PKG_BUILD_DIR)/css $(1)/www/lixian
+	$(CP) $(PKG_BUILD_DIR)/index.html $(1)/www/lixian
+	$(CP) $(PKG_BUILD_DIR)/favicon.ico $(1)/www/lixian
 endef
 
 $(eval $(call BuildPackage,webui-aria2))

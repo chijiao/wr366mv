@@ -107,12 +107,12 @@ define Package/openvpn-$(BUILD_VARIANT)/install
 		$(PKG_INSTALL_DIR)/usr/sbin/openvpn \
 		$(1)/usr/sbin/
 
-	$(INSTALL_BIN) \
-		files/openvpn.init \
-		$(1)/etc/init.d/openvpn
+#	$(INSTALL_BIN) \
+#		files/openvpn.init \
+#		$(1)/etc/init.d/openvpn
 
-	$(INSTALL_CONF) files/openvpn.config \
-		$(1)/etc/config/openvpn
+#	$(INSTALL_CONF) files/openvpn.config \
+#		$(1)/etc/config/openvpn
 
 	$(INSTALL_DATA) \
 		files/openvpn.upgrade \

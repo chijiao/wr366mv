@@ -1,0 +1,8 @@
+#!/bin/sh
+
+/etc/init.d/aria2 enable
+/etc/init.d/samba enable
+/etc/init.d/fstab enable
+
+exit 0
+
